@@ -333,6 +333,30 @@ section { padding: 72px 0; position: relative; }
 }
 .chip:hover { border-color: var(--accent); background: var(--grad-soft); transform: translateY(-2px); }
 
+/* ---- Certifications ---- */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+.cert {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: transform .2s, border-color .2s, background .2s;
+}
+.cert:hover { border-color: var(--accent); background: var(--grad-soft); transform: translateY(-3px); }
+.cert .code {
+  font-weight: 800;
+  font-size: 1.02rem;
+  letter-spacing: .3px;
+}
+.cert .cn { color: var(--text-dim); font-size: .82rem; }
+
 .skill-group { margin-bottom: 26px; }
 .skill-group h4 {
   font-size: .95rem;
